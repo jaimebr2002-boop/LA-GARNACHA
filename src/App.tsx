@@ -660,7 +660,7 @@ export default function App() {
 
           {/* SLIDER */}
           <div className="relative max-w-6xl mx-auto mt-12">
-            <div className="overflow-hidden px-2 md:px-12 py-4">
+            <div className="overflow-hidden px-6 md:px-12 py-4">
               <div 
                 className="flex transition-transform duration-500 ease-in-out"
                 style={{ transform: `translateX(-${currentReviewSlide * 100}%)` }}
@@ -691,14 +691,14 @@ export default function App() {
             {/* Controles */}
             <button 
               onClick={prevReviewSlide}
-              className="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 bg-white text-forest rounded-full flex items-center justify-center shadow-lg hover:bg-terracotta hover:text-white transition-colors z-10 hidden md:flex"
+              className="absolute -left-2 md:left-0 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white text-forest rounded-full flex items-center justify-center shadow-lg hover:bg-terracotta hover:text-white transition-colors z-10"
               aria-label="Anterior reseña"
             >
               <ChevronLeft size={24} />
             </button>
             <button 
               onClick={nextReviewSlide}
-              className="absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 bg-white text-forest rounded-full flex items-center justify-center shadow-lg hover:bg-terracotta hover:text-white transition-colors z-10 hidden md:flex"
+              className="absolute -right-2 md:right-0 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-white text-forest rounded-full flex items-center justify-center shadow-lg hover:bg-terracotta hover:text-white transition-colors z-10"
               aria-label="Siguiente reseña"
             >
               <ChevronRight size={24} />
